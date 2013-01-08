@@ -1,0 +1,17 @@
+# Protegemos htaccess
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+# Protegemos config
+<Files "config.php">
+Order deny,allow
+Deny From All
+</Files>
+
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^id-(.*)/ index.php?psnid=$1 [L,NS]
+RewriteRule ^id-(.*) index.php?psnid=$1 [L,NS]
