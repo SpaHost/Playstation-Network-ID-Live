@@ -6,10 +6,7 @@
 // Email       : soporte@spahost.es
 //
 
-// Calcular tiempo de generacion de pagina
-$m = microtime();
-
-// Basico
+// Index basico
 define('psnid_live_', true);    // Definicion de seguridad
 
 // Nucleo del sistema
