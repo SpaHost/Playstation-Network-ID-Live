@@ -11,16 +11,16 @@ if(!defined('psnid_live_')) die('No esta permitido acceder a esta pagina.');
 
 // calculamos el tiempo del cache
 if (@file_exists($cachefile)) {
-    $cachelast = @filemtime($cachefile);
+  $cachelast = @filemtime($cachefile);
 } else {
-    $cachelast = 0;
+  $cachelast = 0;
 }
 @clearstatcache();
 
 // Mostramos el archivo si aun no vence
 if (time() - $cachetime <$cachelast) {
-    @readfile($cachefile);
-    exit();
+  @readfile($cachefile);
+  exit();
 }
 
 ?>

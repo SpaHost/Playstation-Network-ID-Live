@@ -10,7 +10,7 @@
 if(!defined('psnid_live_')) die('No esta permitido acceder a esta pagina.');
 
 // Configuracion
-$cachetime = 860000;   // duración del cache
+$cachetime = 86400;    // duración del cache 24h
 $cacheext = 'cache';   // extensión de cache
 
 // Configuracion Principal
