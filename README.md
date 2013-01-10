@@ -3,6 +3,8 @@
 
 Easy Script to get PSN ID information from http://www.psnapi.com.ar/
 
+This script have configurable cache (config.php needs to be edited as you wish), and gets all games by PSN ID.
+
 You can see Demo running on http://psn.spahost.es/
 
 Donations
